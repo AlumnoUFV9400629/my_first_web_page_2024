@@ -21,9 +21,9 @@
             align-items: center;
         }
         .container {
-            max-width: 1000px;
+            max-width: 100vw;
             width: 100%;
-            margin: 0 auto;
+            margin: 0;
         }
         header {
             background-color: #333;
@@ -60,7 +60,6 @@
             color: white;
         }
         .footer_section {
-            max-width: 1000px;
             width: 100%;
             background-color: #333;
             color: white;
@@ -74,12 +73,8 @@
             text-decoration: underline;
         }
         .content {
-            height: 800px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #f5f5f5;
+            background: linear-gradient(#76ada4, #9656a1);
+            padding: 40px 40px 60px;
         }
         .menu {
             background-color: #1a1a2e;
@@ -103,8 +98,70 @@
             font-size: 14px;
         }
         .menu-icon {
-            width: 40px;
-            height: 40px;
+            height: 30px;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            overflow: hidden;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .gallery-element {
+            min-width: 30%;
+            flex-grow: 1;
+            border-radius: 10px;
+            aspect-ratio: 1.618;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+        }
+        .gal-elem-bottom {
+            height: 60px;
+            width: 100%;
+            background-color: #333;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+        }
+        .link {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            border: 1px solid white;
+            margin-right: 12px;
+        }
+        .link:hover {
+            border: 1px solid red;
+            background: red;  
+        }
+        .img1 {
+            background-image: url("https://images.unsplash.com/photo-1731157414716-623d47bd8397?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        }
+        .img2 {
+            background-image: url("https://images.unsplash.com/photo-1692273881354-52bbf11bacad?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        }
+        .img3 {
+            background-image: url("https://images.unsplash.com/photo-1733684964669-bfdf0f0747e6?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        }
+        .img4 {
+            background-image: url("https://images.unsplash.com/photo-1560851691-ebb64b584d3d?q=80&w=1799&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        }
+        .img5 {
+            background-image: url("https://images.unsplash.com/photo-1440942788614-7429a62bc8d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        }
+        .img6 {
+            background-image: url("https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
         }
     </style>
 </head>
@@ -121,8 +178,40 @@
     </header>
     <main class="container">
         <div class="content">
-            <h1>Welcome to the Webpage</h1>
-            <p>This is the central area of the webpage where you can include your content.</p>
+            <h1>Welcome to the Webpage, this is a header.</h1>
+            <p>This is a text element, we use the p tag to display it. Now lets see a flex layout of various images in the form of a gallery.</p>
+            <section class="gallery">
+                <div class="gallery-element img1">
+                    <div class="gal-elem-bottom">
+                        <a href="https://images.unsplash.com/photo-1731157414716-623d47bd8397?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="link">Watch image</a>
+                    </div>   
+                </div>
+                <div class="gallery-element img2">
+                    <div class="gal-elem-bottom">
+                        <a href="https://images.unsplash.com/photo-1692273881354-52bbf11bacad?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="link">Watch image</a>
+                    </div> 
+                </div>
+                <div class="gallery-element img3">
+                    <div class="gal-elem-bottom">
+                        <a href="https://images.unsplash.com/photo-1733684964669-bfdf0f0747e6?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="link">Watch image</a>
+                    </div> 
+                </div>
+                <div class="gallery-element img4">
+                    <div class="gal-elem-bottom">
+                        <a href="https://images.unsplash.com/photo-1560851691-ebb64b584d3d?q=80&w=1799&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="link">Watch image</a>
+                    </div> 
+                </div>
+                <div class="gallery-element img5">
+                    <div class="gal-elem-bottom">
+                        <a href="https://images.unsplash.com/photo-1440942788614-7429a62bc8d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="link">Watch image</a>
+                    </div> 
+                </div>
+                <div class="gallery-element img6">
+                    <div class="gal-elem-bottom">
+                        <a href="https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="link">Watch image</a>
+                    </div> 
+                </div>
+            </section>
         </div>
         <div class="menu">
             <div class="menu-content">

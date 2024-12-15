@@ -8,3 +8,5 @@ This is the repository of the activity III.
 - Added footer and header.
 - Added images for content section.
 - Added content menu.
+- Added flex gallery.
+- Styled the content of the page.
