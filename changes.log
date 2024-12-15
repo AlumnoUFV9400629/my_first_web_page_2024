@@ -1,0 +1,29 @@
+commit 4e324198c94945d9d503d1169896072f6ad1d7fb
+Author: Hugo Prieto <9400629@alumnos.ufv.es>
+Date:   Sun Dec 15 08:28:46 2024 +0100
+
+    Added gallery and styled the content of the page
+
+commit f889372d62118b08445ba54af337dbf1d5d7b2b9
+Author: Hugo Prieto <9400629@alumnos.ufv.es>
+Date:   Thu Dec 12 11:27:42 2024 +0100
+
+    Adding content in html and images folder
+
+commit f4d75013a933c519a7dc4470a6d0fdfba51ac42f
+Author: Hugo Prieto <9400629@alumnos.ufv.es>
+Date:   Thu Dec 12 11:10:53 2024 +0100
+
+    Adding header and footer in html file, styles are included too
+
+commit 07b48e79d68fdc16dbd0911be00f90f0e135c1b5
+Author: Hugo Prieto <9400629@alumnos.ufv.es>
+Date:   Thu Dec 12 10:51:31 2024 +0100
+
+    Adding basic structure in html file
+
+commit a7366c5ac121f0b5d8fcf91bdb9573e537172cc1
+Author: AlumnoUFV9400629 <9400629@alumnos.ufv.es>
+Date:   Thu Dec 12 09:42:19 2024 +0100
+
+    Initial commit
